@@ -1,4 +1,4 @@
-# Hell Spring
+# Hello Spring
 ## 개요
 ### 배경
 현재 국내 기업에서 규모가 되는 기업들은 Java기반 Spring Framework를 많이 사용하고 있다.
@@ -23,3 +23,20 @@ build.gradle
 - spring-boot-starter-test: 테스트 코드 라이브러리로 Junit 사용
 ```
 Dependencies: 라이브러리에 필요한 의존 라이브러리 자동으로 불러옴
+
+### View 환경설정
+정적 페이지 
+```
+src - main - resources - static
+```
+[Spring Document](https://docs.spring.io/spring-framework/docs/current/reference/html/)
+
+thymeleaf 템플릿 엔진
+[thymeleaf](https://www.thymeleaf.org/)
+
+웹브라우저 - 내장 톰캣 서버 - 스프링 컨테이너 - viewResolver - html 변환 - 웹브라우저
+
+스프링 부트 템플릿엔진 기본 viewName 매핑
+`resources:templates/`+{viewName}+`.html`
+
+### 빌드하고 실행하기
