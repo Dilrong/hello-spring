@@ -31,12 +31,21 @@ src - main - resources - static
 ```
 [Spring Document](https://docs.spring.io/spring-framework/docs/current/reference/html/)
 
-thymeleaf 템플릿 엔진
-[thymeleaf](https://www.thymeleaf.org/)
+[thymeleaf](https://www.thymeleaf.org/) 템플릿 엔진
 
-웹브라우저 - 내장 톰캣 서버 - 스프링 컨테이너 - viewResolver - html 변환 - 웹브라우저
+`웹브라우저 - 내장 톰캣 서버 - 스프링 컨테이너 - viewResolver - html 변환 - 웹브라우저`
 
 스프링 부트 템플릿엔진 기본 viewName 매핑
 `resources:templates/`+{viewName}+`.html`
 
 ### 빌드하고 실행하기
+spring 경로 이동
+```
+./gradlew build
+cd build/libs
+java -jar hello-spring-0.0.1-SNAPSHOT.jar
+실행확인
+
+# build 삭제
+./gradlew clean
+```
